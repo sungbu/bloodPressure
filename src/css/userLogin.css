@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.wrapper,html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #1d262b;
+    color: #f4f4f4;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper>p{
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: red;
+    margin-top: 100px;
+    font-weight: 200;
+}
+.wrapper .headPic{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.wrapper .inp{
+    width: 80%;
+    text-align: center;
+}
+.wrapper .inp div label{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+.wrapper .inp div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    text-indent: 1em;
+    color: #444;
+    font-size: 19px;
+}
+.wrapper .inp button{
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    color: #444;
+}
+.wrapper .signUp{
+    text-align: right;
+    margin-right: 20px;
+    margin-top:30px;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,74 @@
+.wrapper,html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d262b;
+}
+.return{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0,0, .3);
+    line-height: 40px;
+    color: #f4f4f4;
+}
+body>p{
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid green; */
+    text-align: center;
+    line-height: 30px;
+    color: green;
+    opacity: 0;
+}
+.return i{
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+.wrapper{
+    width: 100%;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+.wrapper .title {
+    width: 100%;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.wrapper .content{
+    width: 80%;
+    text-align: center;
+}
+.wrapper .content div{
+    margin-top: 10px;
+}
+.wrapper .content div label{
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.wrapper .content div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    text-indent: 1em;
+    color: #444;
+    font-size: 19px;
+}
+.wrapper .content button{
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f4f4f4;
+    font-weight: 400;
+    border: 2px solid #444;
+}

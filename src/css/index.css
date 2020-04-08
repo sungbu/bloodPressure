@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.wrapper,.addBloodpressure{
+    width: 100%;
+    height: 100%;
+    background-color: #1d262b;
+}
+.addBloodpressure{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;;
+    z-index: 10;
+    background-color: #151e25;
+}
+.addBloodpressure .return{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.3);
+}
+.addBloodpressure .return div{
+    width: 40px;
+    height: 50px;
+    transform: rotate(180deg);
+
+}
+.addBloodpressure .return i{
+    display: inline-block;
+    color: #f4f4f4;
+    font-size: 20px;
+    line-height: 50px;
+}
+.addBloodpressure .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150px) translateY(-150px);
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    box-shadow: 2px 5px 20px #6e6e6e;
+    border-radius: 5px;
+    text-align: center;
+}
+.addBloodpressure .content p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #464646;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.addBloodpressure .content form label{
+    display: inline-block;
+    color: #48515a;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.addBloodpressure .content form input{
+    width:100px;
+    height:20px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #ccc;
+    outline: none;
+    color: #464646;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+.addBloodpressure .content form input#postLowPressure{
+    border: 2px solid #49a0cd;
+}
+.addBloodpressure .content form input#postHeightPressure{
+    border: 2px solid #cd182b;
+}
+.addBloodpressure .content form button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 50px;
+    background: #ddaa4a;
+    outline: none;
+}
+.addBloodpressure .content form button i{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #f4f4f4;
+}
+.container .calendar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 150px; */
+    z-index: 2;
+    color: #444;
+    background: rgba(255,255,255,.9);
+    text-align: right;
+    padding-bottom: 30px;
+    display: none;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+}
+.container .calendar ul{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
+}
+.container .calendar ul li{
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #49a0cd;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .calendar ul li.active{
+    background: #49a0cd;
+    border: 2px solid #49a0cd;
+    color: #f4f4f4;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+.wrapper .nav{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+.wrapper .nav ul {
+    width:90%;
+    margin: 5px auto;
+    text-align: center;
+}
+.wrapper .nav ul li{
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #4b545d;
+    line-height: 50px;
+}
+.wrapper .nav ul li:nth-child(1),.wrapper .nav ul li:nth-child(3){
+    width: 20%;
+}
+.wrapper .nav ul li:nth-child(2){
+    width: 50%;
+}
+.wrapper .nav ul li i{
+    font-size: 25px;
+}
+.wrapper .content{
+
+}
+.wrapper .content .month ul{
+    overflow: scroll;
+    white-space: nowrap;
+    background: #151e25;
+    color: #4b545d;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.wrapper .content .month ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.wrapper .content .month ul li.active{
+    color: #a3aab0;
+    font-weight: 500;
+}
+.wrapper .content .chart{
+    height: 300px;
+    /* margin: 0 auto;
+    text-align: center; */
+    /* border: 1px solid red; */
+}
+.wrapper .dataShow .date{
+    height: 30px;
+    /* border: 1px solid red; */
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #a3aab0;
+    font-weight: bold;
+    letter-spacing: .5em;
+}
+.wrapper .dataShow .dataList{
+    margin: 0 auto;
+    
+}
+.wrapper .dataShow .dataList ul{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.wrapper .dataShow .dataList ul li{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    background: #151e25;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top:5px;
+    margin-right: 5px;
+    /* border: 1px solid red; */
+}
+.wrapper .dataShow .dataList ul li div{
+    margin-top: 10px;
+}
+.wrapper .dataShow .dataList ul li .icon i{
+    font-size: 30px;
+    color: #48515a;
+}
+.wrapper .dataShow .dataList ul li:nth-child(1) .icon i{
+    color: #ddaa4a;
+}
+.wrapper .dataShow .dataList ul li:nth-child(2) .icon i{
+    color: #49a0cd;
+}
+.wrapper .dataShow .dataList ul li:nth-child(3) .icon i{
+    color: #cd182b;
+}
+.wrapper .dataShow .dataList ul li .data{
+    color: #e1ebf7;
+    font-size: 19px;
+}
+.wrapper .dataShow .dataList ul li .dataTitle{
+    color: #48515a;
+}
+.wrapper .foolter{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+}
+.wrapper .foolter button{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid red;
+    color: red;
+    border-radius: 10px;
+}

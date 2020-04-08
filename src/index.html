@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Pressure</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1478684_7pcmnaa65ey.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="addBloodpressure" id="addBloodpressure">
+                <div class="return" id="return">
+                    <div><i class="iconfont icon2014082601545126easyiconnet"></i></div>
+                </div>
+                <div class="content">
+                    <p>添加血压：</p>
+                    <form>
+                        <div>
+                            <label for="owPressure">低压：</label>
+                            <input type="text" id="postLowPressure">
+                        </div>
+                        <div>
+                            <label for="heightPressure">高压：</label>
+                            <input type="text" id="postHeightPressure">
+                        </div>
+                        <button id="pressureSubmit"><i class="iconfont icon2014082601545126easyiconnet"></i></button>
+                    </form>
+                </div>
+        </div>
+        <div class="calendar">
+            <ul id="calendar">
+                <!-- <li>2011</li>
+                <li>2012</li>
+                <li class="active">2013</li>
+                <li>2014</li>
+                <li>2015</li>
+                <li>2016</li>
+                <li>2017</li>
+                <li>2018</li>
+                <li>2019</li>
+                <li>2020</li> -->
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="nav">
+                <ul>
+                    <li><i class="iconfont iconrili"></i></li>
+                    <li><span><span style="color:#49a0cd;">B</span>lood <span style="color:#cd182b;">P</span>ressure</span></li>
+                    <li id="addBtn"><i class="iconfont iconadd"></i></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="month">
+                    <ul id="month"></ul>
+                </div>
+                <div class="chart" id="chart"></div>
+            </div>
+            <div class="dataShow">
+                <div class="date" id="timeAxis">
+                    <!-- <span>今天</span> -->
+                </div>
+                <div class="dataList">
+                    <ul>
+                        <li>
+                            <div class="icon"><i class="iconfont icondefen"></i></div>
+                            <div class="data" id="score">
+                                <span>loading</span>
+                            </div>
+                            <div class="dataTitle">血压评估</div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="iconfont iconshuidi1"></i></div>
+                            <div class="data" id="lowPressure">
+                                <span>loading</span>
+                            </div>
+                            <div class="dataTitle">低压</div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="iconfont iconshuidi1"></i></div>
+                            <div class="data" id="heightPressure">
+                                <span>loading</span>
+                            </div>
+                            <div class="dataTitle">高压</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foolter">
+                <button id="Cancellation">注销</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
